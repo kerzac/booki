@@ -8,6 +8,8 @@
 
  body {
    max-width: 1440px;
+   margin-left: 3rem;
+   margin-right: 3rem;
  }
 
  /* HEADER */
@@ -23,16 +25,14 @@
  .booki-logo {
     max-width: 4rem;
     max-height: 1.25rem;
-    margin-left: 3rem;
  }
 
  .prime-nav {
     height: 6rem;
-    width: 20rem;
+    width: 16rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-right: 1rem;
  }
 
  .prime-nav a {
@@ -46,3 +46,5 @@
     font-weight: 400;
     border-top: 0.25rem solid #0065fc;
  }
+
+ /* SEARCH FORM */
