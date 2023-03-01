@@ -1,50 +1,50 @@
- /* GLOBAL */
+/* GLOBAL */
 
- * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
- }
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Raleway', sans-serif;
+}
 
- body {
+body {
    max-width: 1440px;
-   margin-left: 3rem;
-   margin-right: 3rem;
- }
+   margin: 0 auto;
+   padding: 0 3rem;
+}
 
- /* HEADER */
+/* HEADER */
 
- .prime-header {
-    height: 6rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
- }
+.prime-header {
+   height: 6rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
 
- .booki-logo {
-    max-width: 4rem;
-    max-height: 1.25rem;
- }
+.booki-logo {
+   max-width: 4rem;
+   max-height: 1.25rem;
+}
 
- .prime-nav {
-    height: 6rem;
-    width: 16rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
- }
+.prime-nav {
+   height: 6rem;
+   width: 16rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
 
- .prime-nav a {
-    text-decoration: none;
-    padding: 2.25rem 1rem;
-    border-top: 0.25rem solid transparent;
- }
+.prime-nav a {
+   text-decoration: none;
+   padding: 2.25rem 1rem;
+   border-top: 0.25rem solid transparent;
+}
 
- .prime-nav a:hover {  
-    color: #0065fc;
-    font-weight: 400;
-    border-top: 0.25rem solid #0065fc;
- }
+.prime-nav a:hover {  
+   color: #0065fc;
+   font-weight: 400;
+   border-top: 0.25rem solid #0065fc;
+}
 
- /* SEARCH FORM */
+/* SEARCH FORM */
