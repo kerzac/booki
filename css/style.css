@@ -12,8 +12,8 @@ body {
    padding: 0 3rem;
 }
 
-main {
-   margin: 2.5rem 0;
+a {
+   text-decoration: none;
 }
 
 /* Component */
@@ -24,65 +24,98 @@ main {
 }
 
 .section-title {
-   font-weight: 700;
    font-size: 1.375rem;
+   font-weight: 700;
+   padding: 0.5rem 0;
 }
 
-.info-sub {
-   font-weight: 400;
+.sub-title {
+   font-size: 1.125rem;
+   font-weight: 700;
+   padding: 0.5rem 0;
+}
+
+.info {
    font-size: 1rem;
+   font-weight: 400;
    line-height: 2rem;
 }
 
-.info-sub i {
-   font-size: 0.75rem;
+.card-title {
+   font-size: 1rem;
+   font-weight: 700;
+}
+
+.card-info {
+   font-size: 0.875rem;
+   font-weight: 400;
+}
+
+.card-star i {
+   font-size: 0.875rem;
    color: #0065fc;
-   border: 0.125rem solid #f2f2f2;
-   border-radius: 50%;
-   height: 1.25rem;
-   width: 1.25rem;
-   text-align: center;
-   line-height: 1.25rem;
+
+}
+
+.card-star i:nth-child(5) {
+   color: #f2f2f2;
+
 }
 
 /* Header */
 
-#prime-header {
-   height: 6rem;
+header {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
+   height: 6rem;
 }
 
-#prime-nav {
-   height: 6rem;
-   width: 16rem;
+nav {
    display: flex;
    flex-direction: row;
    justify-content: space-around;
+   height: 6rem;
+   width: 16rem;
 }
 
-#prime-nav a {
-   text-decoration: none;
+nav a {
    padding: 2.25rem 1rem;
    border-top: 0.25rem solid transparent;
 }
 
-#prime-nav a:hover {  
-   color: #0065fc;
+nav a:hover {  
    font-weight: 400;
+   color: #0065fc;
    border-top: 0.25rem solid #0065fc;
 }
 
-/* Search Form */
+/* Main */
+
+main {
+   margin: 2.5rem 0;
+}
+
+.main-top {
+   margin-bottom: 2.5rem;
+}
+
+.main-center {
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 2.5rem;
+   column-gap: 2rem;
+}
+
+   /* Search Form */
 
 .search-field {
-   margin: 1rem 0;
-   height: 2rem;
    display: flex;
    flex-direction: row;
    justify-content: flex-start;
+   margin: 1rem 0;
+   height: 2rem;
 }
 
 .search-field button {
@@ -106,27 +139,21 @@ main {
 }
 
 .search-field i.fa-location-dot {
-   min-width: 2rem;
    display: flex;
    justify-content: center;
    align-items: center;
    background-color: #f2f2f2;
    border-radius: 0.5rem 0 0 0.5rem;
+   min-width: 2rem;
 }
 
-/* Filter */
+   /* Filter */
 
 .filter-field {
-   margin: 2rem 0 1rem 0;
    display: flex;
    flex-direction: row;
+   margin: 2rem 0 1rem 0;
    column-gap: 2rem;;
-}
-
-.filter-title {
-   font-size: 1.125rem;
-   font-weight: 700;
-   padding: 0.5rem 0;
 }
 
 .filter{
@@ -146,6 +173,120 @@ main {
    color: #0065fc;
 }
 
+.info i {
+   font-size: 0.75rem;
+   color: #0065fc;
+   border: 0.125rem solid #f2f2f2;
+   border-radius: 50%;
+   height: 1.25rem;
+   width: 1.25rem;
+   text-align: center;
+   line-height: 1.25rem;
+}
+
+   /* Lodge */
+
+#lodge {
+   background-color: #f2f2f2;
+   flex-basis: 55rem;
+   padding: 1.5rem;
+   border-radius: 1rem;
+}
+
+.lodge-cards {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   column-gap: 1rem;
+   row-gap: 1rem;
+   margin: 1rem 0;
+}
+
+.lodge-card {
+   background-color: white;
+   padding: 0.25rem 0.25rem 0.5rem 0.25rem;
+   margin: 0.5rem;
+   border-radius: 1rem;
+   box-shadow: 0.25rem 0.25rem 0.25rem lightgrey
+}
+
+.lodge-image {
+   height: 8rem;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 1rem 1rem 0 0;
+}
+
+.lodge-text {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   line-height: 1.5rem;
+   color: black;
+}
+
+   /* Trend */
+
+.trend {
+   background-color: #f2f2f2;
+   flex-basis: 22rem;
+   padding: 1.5rem 2rem 1.5rem 2rem;
+   border-radius: 1rem;
+}
+
+.trend-cards {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   row-gap: 2rem;
+   margin: 1.5rem 0;
+}
+
+.trend-card {
+   display: flex;
+   flex-direction: row;
+   background-color: white;
+   padding: 0.25rem;
+   border-radius: 1rem;
+   box-shadow: 0.25rem 0.25rem 0.25rem lightgrey;
+}
+
+.trend-card a {
+   display: flex;
+   flex-direction: row;
+}
+
+.trend-image {
+   width: 25%;
+   object-fit: cover;
+   border-radius: 1rem 0 0 1rem;
+}
+
+.trend-text {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 0.25rem 1rem;
+   color: black;
+   
+}
+
+.trend-text-top {
+   line-height: 1.125rem;
+}
+
+.trend .section-title {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.trend .section-title i {
+   font-size: 1.125rem;
+   color: #0065fc;
+   line-height: 1.5rem;
+}
+
 /* Media Queries */
 
    /* Desktop */
@@ -154,6 +295,7 @@ main {
    .mobile-button {
       display: none;
    }
+
 }
 
    /* Tablet */
