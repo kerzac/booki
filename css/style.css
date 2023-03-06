@@ -256,7 +256,7 @@ main {
 }
 
 .trend-image {
-   width: 25%;
+   max-width: 25%;
    object-fit: fill;
    border-radius: 1rem 0 0 1rem;
 }
@@ -380,7 +380,7 @@ footer {
    }
 
    .trend-image {
-      width: 33%;
+      max-width: 33%;
    }
 
    .activity-image {
