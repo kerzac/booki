@@ -28,6 +28,7 @@ a:hover {
    max-height: 1.25rem;
 }
 
+.main-title,
 .section-title {
    font-size: 1.375rem;
    font-weight: 700;
@@ -104,6 +105,7 @@ main {
 .main-center {
    display: flex;
    flex-direction: row;
+   justify-content: space-between;
    margin: 2.5rem 0;
    column-gap: 2rem;
 }
@@ -428,7 +430,7 @@ footer {
    }
 
    .search-filter {
-      padding: 2rem;
+      padding: 1rem;
    }
 
    .search-field {
@@ -470,7 +472,7 @@ footer {
    }
 
    .trend-card {
-      max-height: 12rem;
+      max-height: 18rem;
    }
 
    .trend-image {
