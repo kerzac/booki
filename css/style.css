@@ -10,6 +10,7 @@ body {
    max-width: 1440px;
    margin: 0 auto;
    padding: 0 3rem;
+   box-sizing: border-box;
 }
 
 a {
@@ -439,10 +440,15 @@ footer {
       margin: 1rem 0;
    }
 
+   #area {
+      max-width: 12rem;
+   }
+
    .filter-field {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
+      column-gap: 0.75rem;
       row-gap: 1rem;
       margin-top: 0;
       margin-bottom: 3rem;
