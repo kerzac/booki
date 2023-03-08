@@ -424,8 +424,7 @@ footer {
       border-bottom: 0.25rem solid transparent;
    }
 
-   .header-nav a:hover {  
-      font-weight: 400;
+   .header-nav a:hover {
       border-top: none;
       border-bottom: 0.25rem solid #0065fc;
    }
