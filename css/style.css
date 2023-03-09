@@ -103,15 +103,7 @@ main {
    margin: 2.5rem 0;
 }
 
-.main-center {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   margin: 2.5rem 0;
-   column-gap: 2rem;
-}
-
-   /* Search Form */
+/* Search Form */
 
 .search-field {
    display: flex;
@@ -150,7 +142,7 @@ main {
    min-width: 2rem;
 }
 
-   /* Filter */
+/* Filter */
 
 .filter-field {
    display: flex;
@@ -187,7 +179,17 @@ main {
    line-height: 1.25rem;
 }
 
-   /* Lodge */
+/* Main Center */
+
+.main-center {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 2.5rem 0;
+   column-gap: 2rem;
+   }
+
+/* Lodge */
 
 #lodge {
    background-color: #f2f2f2;
@@ -227,7 +229,7 @@ main {
    line-height: 1.5rem;
 }
 
-   /* Trend */
+/* Trend */
 
 .trend {
    background-color: #f2f2f2;
@@ -287,7 +289,7 @@ main {
    line-height: 1.5rem;
 }
 
-   /* Activity */
+/* Activity */
 
 #activity {
    display: flex;
@@ -347,7 +349,7 @@ footer {
 
 /* Media Queries */
 
-   /* Tablet  */
+/* Tablet  */
 
 @media screen and (min-width: 768px) {
 
@@ -395,7 +397,7 @@ footer {
    }
 }
 
-   /* Mobile */
+/* Mobile */
 
 @media screen and (max-width: 767px) {
 
